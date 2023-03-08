@@ -8,7 +8,7 @@ const generatHTML = pokemons => pokemons.reduce((acumulator, {name, id, types}) 
 
     acumulator += `
         <li class="card ${types[0]}">
-            <img class= "card-image"  alt="${name}" src"https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${id}.svg" />
+            <img class= "card-image"  alt="${name}" src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${id}.svg" />
             <h2 cass="card-title"> ${id}. ${name}</h2>
             <p class="card-subtitle"> ${elementTypes.join(' | ')}</p>
         </li>`
